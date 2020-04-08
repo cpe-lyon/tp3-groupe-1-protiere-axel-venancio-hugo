@@ -1,4 +1,4 @@
-#TP 3 TP 3 - Gestion des paquets
+# TP 3 - Gestion des paquets
 
 ## Exercice 1 : Commandes de base
 
