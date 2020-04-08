@@ -32,17 +32,11 @@ dpkg -S $(which -a $1)
 ```
 
 ## Exercice 3
+Ecrire une commande qui affiche “INSTALLÉ” ou “NON INSTALLÉ” selon le nom et le statut du package
+spécifié dans cette commande.
 
-Nous n'avons pas réussi à réaliser la fonction souhaité en une commande donc nous l'avons écrite dans un script bash. Nous nous sommes inspirés de la commande réalisée précédemment.
-```
-#!/bin/bash
-
-if [[ -n $(grep "install $1 " /var/log/apt/history.log) ]] ; then
-	echo  "INSTALLE"
-else
-	echo  "NON INSTALLE"
-fi
-```
+dpkg -l | grep "$1" 1>/dev/null && echo "INSTALLÉ" || echo "NON INSTALLÉ"
+1>/dev/null redirige la sortie vers une corbeille
 
 ## Exercice 4
 
