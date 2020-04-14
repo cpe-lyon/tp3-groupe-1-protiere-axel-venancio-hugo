@@ -1,3 +1,6 @@
+Axel Protiere
+Hugo Venancio
+
 # TP 3 - Gestion des paquets
 
 ## Exercice 1 : Commandes de base
